@@ -4329,7 +4329,7 @@ SWIGINTERN PyObject *_wrap_lash_event_get_client_id(PyObject *self, PyObject *ar
     if (!argp2) {
       SWIG_exception_fail(SWIG_NullReferenceError, "invalid null reference " "in method '" "lash_event_get_client_id" "', argument " "2"" of type '" "uuid_t""'");
     } else {
-      uuid_copy(arg2, *((uuid_t *)(argp2)));
+      memcpy(arg2, *((uuid_t *)(argp2)), sizeof(uuid_t));
     }
   }
   lash_event_get_client_id((struct _lash_event const *)arg1,arg2);
@@ -4461,7 +4461,7 @@ SWIGINTERN PyObject *_wrap_lash_event_set_client_id(PyObject *self, PyObject *ar
     if (!argp2) {
       SWIG_exception_fail(SWIG_NullReferenceError, "invalid null reference " "in method '" "lash_event_set_client_id" "', argument " "2"" of type '" "uuid_t""'");
     } else {
-      uuid_copy(arg2, *((uuid_t *)(argp2)));
+      memcpy(arg2, *((uuid_t *)(argp2)), sizeof(uuid_t));
     }
   }
   lash_event_set_client_id(arg1,arg2);

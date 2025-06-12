@@ -6,7 +6,7 @@ py = import('python')
 py = py.find_installation('python2')
 
 libpylash = py.extension_module(
-  'pylash',
+  '_lash',
   [
     'lash.c',
     'lash_wrap.c'
